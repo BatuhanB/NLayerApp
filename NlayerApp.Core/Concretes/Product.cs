@@ -4,10 +4,6 @@ namespace NLayerApp.Core.Concretes;
 
 public class Product : BaseEntity
 {
-    public Product(string name)
-    {
-        Name = name ?? throw new ArgumentNullException(nameof(name));
-    }
     public Product()
     {
         

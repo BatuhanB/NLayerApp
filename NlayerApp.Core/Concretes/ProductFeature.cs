@@ -1,16 +1,14 @@
-﻿namespace NLayerApp.Core.Concretes;
+﻿using System.Xml.Linq;
+
+namespace NLayerApp.Core.Concretes;
 
 public class ProductFeature
 {
-    public ProductFeature(string color)
-    {
-        Color = color ?? throw new ArgumentNullException(nameof(color));
-    }
-
     public ProductFeature()
     {
         
     }
+
     public int Id { get; set; }
     public string Color { get; set; }
     public int Height { get; set; }

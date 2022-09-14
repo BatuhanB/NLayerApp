@@ -11,8 +11,8 @@ public class ProductConfiguration : IEntityTypeConfiguration<Product>
         builder.HasKey(x => x.Id);
         builder.Property(x => x.Id).UseIdentityColumn();
         builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
-        builder.Property(x => x.Price).IsRequired();
-        builder.Property(x => x.Stock).IsRequired().HasColumnType("decimal(18,2)");
+        builder.Property(x => x.Price).IsRequired().HasColumnType("decimal(18,2)");
+        builder.Property(x => x.Stock).IsRequired();
         builder.HasOne(x => x.Category).WithMany(x => x.Products).HasForeignKey(x => x.CategoryId);
         builder.ToTable("Products");
     }
