@@ -13,3 +13,5 @@ C:\Users\balib\source\repos\NLayerApp\NLayerApp.Repository\obj\Debug\net6.0\NLay
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.Repository\obj\Debug\net6.0\refint\NLayerApp.Repository.dll
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.Repository\obj\Debug\net6.0\NLayerApp.Repository.pdb
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.Repository\obj\Debug\net6.0\ref\NLayerApp.Repository.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Repository\bin\Debug\net6.0\NLayerApp.Repository.runtimeconfig.json
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Repository\obj\Debug\net6.0\NLayerApp.Repository.genruntimeconfig.cache

@@ -8,6 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Concretes\" />
+    <Folder Include="UnitOfWorks\" />
+    <Folder Include="Services\" />
+    <Folder Include="Repositories\Abstracts\" />
+    <Folder Include="Repositories\Concretes\" />
   </ItemGroup>
 
 </Project>

@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "NlayerApp.Core/1.0.0": {
+      "NLayerApp.Core/1.0.0": {
         "runtime": {
-          "NlayerApp.Core.dll": {}
+          "NLayerApp.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "NlayerApp.Core/1.0.0": {
+    "NLayerApp.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

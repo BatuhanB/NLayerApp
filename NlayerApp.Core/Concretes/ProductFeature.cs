@@ -6,6 +6,11 @@ public class ProductFeature
     {
         Color = color ?? throw new ArgumentNullException(nameof(color));
     }
+
+    public ProductFeature()
+    {
+        
+    }
     public int Id { get; set; }
     public string Color { get; set; }
     public int Height { get; set; }

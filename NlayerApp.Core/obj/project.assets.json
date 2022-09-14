@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NlayerApp.Core\\NlayerApp.Core.csproj",
-      "projectName": "NlayerApp.Core",
-      "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NlayerApp.Core\\NlayerApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NlayerApp.Core\\NLayerApp.Core.csproj",
+      "projectName": "NLayerApp.Core",
+      "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NlayerApp.Core\\NLayerApp.Core.csproj",
       "packagesPath": "C:\\Users\\balib\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NlayerApp.Core\\obj\\",
       "projectStyle": "PackageReference",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
