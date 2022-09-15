@@ -24,7 +24,7 @@ public class GenericRepository<T>:IGenericRepository<T> where T : class, new()
         return _dbSet.Where(expression);
     }
 
-    public IQueryable<T> GetAll(Expression<Func<T, bool>> expression)
+    public IQueryable<T> GetAll()
     {
         return _dbSet.AsNoTracking().AsQueryable();
     }
@@ -54,7 +54,7 @@ public class GenericRepository<T>:IGenericRepository<T> where T : class, new()
         _dbSet.Update(entity);
     }
 
-    public void Delete(T entity)
+    public void Remove(T entity)
     {
         _dbSet.Remove(entity);
     }
