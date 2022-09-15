@@ -30,6 +30,9 @@
             "projectReferences": {
               "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Repository\\NLayerApp.Repository.csproj": {
                 "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Repository\\NLayerApp.Repository.csproj"
+              },
+              "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj": {
+                "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj"
               }
             }
           }
@@ -190,6 +193,71 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj",
+        "projectName": "NLayerApp.Service",
+        "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj",
+        "packagesPath": "C:\\Users\\balib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\balib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Repository\\NLayerApp.Repository.csproj": {
+                "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Repository\\NLayerApp.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
             }
           },
           "imports": [

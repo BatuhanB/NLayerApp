@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NLayerApp.Repository\NLayerApp.Repository.csproj" />
+    <ProjectReference Include="..\NLayerApp.Service\NLayerApp.Service.csproj" />
   </ItemGroup>
 
 </Project>
