@@ -5,10 +5,17 @@ namespace NLayerApp.Core.Concretes;
 
 public class Category : BaseEntity
 {
-    //public Category(string name)
-    //{
-    //    Name = name ?? throw new ArgumentNullException(nameof(name));
-    //}
+    public Category(int id,DateTime createdDate,DateTime updatedDate,string name):base(id, createdDate, updatedDate)
+    {
+        Id = id;
+        CreatedDate = DateTime.Now;
+        UpdatedDate = updatedDate;
+        Name = name ?? throw new ArgumentNullException(nameof(name));
+    }
+    public Category()
+    {
+        
+    }
     public string Name { get; set; }
     public ICollection<Product>? Products { get; set; }
 }
