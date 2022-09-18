@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace NLayerApp.Core.Concretes;
+﻿namespace NLayerApp.Core.Concretes;
 
 public class ProductFeature
 {

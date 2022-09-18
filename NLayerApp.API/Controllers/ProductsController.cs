@@ -11,11 +11,19 @@ namespace NLayerApp.API.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IService<Product> _service;
+        private readonly IProductService _productService;
 
-        public ProductsController(IMapper mapper, IService<Product> service)
+        public ProductsController(IMapper mapper, IService<Product> service, IProductService productService)
         {
             _mapper = mapper;
             _service = service;
+            _productService = productService;
+        }
+
+        [HttpGet("GetProductsWithCategory")]
+        public async Task<IActionResult> GetProductsWithCategory()
+        {
+            return CreateActionResult(await _productService.GetProductsWithCategory());
         }
 
         [HttpGet]
@@ -33,6 +41,7 @@ namespace NLayerApp.API.Controllers
             var productsDto = _mapper.Map<ProductDto>(product);
             return CreateActionResult(CustomResponseDto<ProductDto>.Success(200, productsDto,"Product has been successfully listed"));
         }
+
         [HttpPost]
         public async Task<IActionResult> Save(ProductDto productDto)
         {
@@ -40,6 +49,17 @@ namespace NLayerApp.API.Controllers
             var productsDto = _mapper.Map<ProductDto>(product);
             return CreateActionResult(CustomResponseDto<ProductDto>.Success(201, productsDto,"Product has been successfully saved"));
         }
+
+        //[HttpPost]
+        //public async Task<IActionResult> SaveMany(List<ProductDto> productDto)
+        //{
+        //    var product = await _service.AddRangeAsync(_mapper.Map<List<Product>>(productDto));
+        //    var productsDto = _mapper.Map<ProductDto>(product);
+        //    //var result = CustomResponseDto<ProductDto>.Success(201, productsDto, "Product has been successfully saved");
+        //    var result2 = NoContentDto.Success(201, "Products has been successfully added");
+        //    return CreateActionResult(result2);
+        //}
+
         [HttpPut]
         public async Task<IActionResult> Update(ProductUpdateDto productUpdateDto)
         {
@@ -47,6 +67,7 @@ namespace NLayerApp.API.Controllers
             var noContent = NoContentDto.Success(204, "Product has been successfully updated");
             return CreateActionResult(noContent);
         }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

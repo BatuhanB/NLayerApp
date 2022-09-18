@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using NLayerApp.Core.DTOs;
 
 namespace NLayerApp.API.Controllers
@@ -22,7 +21,6 @@ namespace NLayerApp.API.Controllers
             return new ObjectResult(response)
             {
                 StatusCode = response.StatusCode,
-                
             };
         }
     }
