@@ -21,6 +21,6 @@ public class ProductService:Service<Product>,IProductService
     {
         var products = await _productRepository.GetProductsWithCategory();
         var productsDto = _mapper.Map<List<ProductWithCategoryDto>>(products);
-        return CustomResponseDto<List<ProductWithCategoryDto>>.Success(200,productsDto,"Products with category has been listed");
+        return CustomResponseDto<List<ProductWithCategoryDto>>.Success(200,productsDto);
     }
 }

@@ -67,3 +67,6 @@ C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\AutoMapper.
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\NLayerApp.Service.dll
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\NLayerApp.Service.pdb
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

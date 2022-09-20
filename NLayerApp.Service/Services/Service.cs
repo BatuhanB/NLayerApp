@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using NLayerApp.Core.Repositories.Abstracts;
 using NLayerApp.Core.Services;
 using NLayerApp.Core.UnitOfWorks;
+using NLayerApp.Service.Exceptions;
 
 namespace NLayerApp.Service.Services;
 
@@ -19,7 +20,13 @@ public class Service<T>:IService<T> where T :class,new()
 
     public async Task<T> GetByIdAsync(int id)
     {
-        return await _repository.GetByIdAsync(id);
+        var hasProduct = await _repository.GetByIdAsync(id);
+        if (hasProduct == null)
+        {
+            throw new NotFoundException($"{typeof(T).Name}({id}) not found");
+        }
+
+        return hasProduct;
     }
 
     public async Task<IEnumerable<T>> GetAllAsync()
