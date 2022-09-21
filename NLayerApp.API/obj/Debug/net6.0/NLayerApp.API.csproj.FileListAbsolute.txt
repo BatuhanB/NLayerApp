@@ -70,3 +70,5 @@ C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\NLayerApp.S
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\Autofac.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.API\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
