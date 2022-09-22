@@ -970,6 +970,19 @@
           }
         }
       },
+      "NLayerApp.Caching/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "NLayerApp.Service": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NLayerApp.Caching.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NLayerApp.Caching.dll": {}
+        }
+      },
       "NLayerApp.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2663,6 +2676,11 @@
         "version.txt"
       ]
     },
+    "NLayerApp.Caching/1.0.0": {
+      "type": "project",
+      "path": "../NLayerApp.Caching/NLayerApp.Caching.csproj",
+      "msbuildProject": "../NLayerApp.Caching/NLayerApp.Caching.csproj"
+    },
     "NLayerApp.Core/1.0.0": {
       "type": "project",
       "path": "../NlayerApp.Core/NLayerApp.Core.csproj",
@@ -2684,8 +2702,8 @@
       "Autofac.Extensions.DependencyInjection >= 8.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.9",
+      "NLayerApp.Caching >= 1.0.0",
       "NLayerApp.Repository >= 1.0.0",
-      "NLayerApp.Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -2716,11 +2734,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Caching\\NLayerApp.Caching.csproj": {
+              "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Caching\\NLayerApp.Caching.csproj"
+            },
             "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Repository\\NLayerApp.Repository.csproj": {
               "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Repository\\NLayerApp.Repository.csproj"
-            },
-            "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj": {
-              "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj"
             }
           }
         }

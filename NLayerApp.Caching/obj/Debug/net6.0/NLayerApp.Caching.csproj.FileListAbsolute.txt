@@ -10,3 +10,10 @@ C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\obj\Debug\net6.0\NLayerA
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\obj\Debug\net6.0\refint\NLayerApp.Caching.dll
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\obj\Debug\net6.0\NLayerApp.Caching.pdb
 C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\obj\Debug\net6.0\ref\NLayerApp.Caching.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\bin\Debug\net6.0\NLayerApp.Core.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\bin\Debug\net6.0\NLayerApp.Repository.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\bin\Debug\net6.0\NLayerApp.Service.dll
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\bin\Debug\net6.0\NLayerApp.Service.pdb
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\bin\Debug\net6.0\NLayerApp.Core.pdb
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\bin\Debug\net6.0\NLayerApp.Repository.pdb
+C:\Users\balib\source\repos\NLayerApp\NLayerApp.Caching\obj\Debug\net6.0\NLayerApp.Caching.csproj.CopyComplete

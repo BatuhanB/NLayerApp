@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Caching\\NLayerApp.Caching.csproj": {
+                "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Caching\\NLayerApp.Caching.csproj"
+              },
               "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Repository\\NLayerApp.Repository.csproj": {
                 "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Repository\\NLayerApp.Repository.csproj"
-              },
-              "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj": {
-                "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj"
               }
             }
           }
@@ -81,6 +81,65 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Caching\\NLayerApp.Caching.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Caching\\NLayerApp.Caching.csproj",
+        "projectName": "NLayerApp.Caching",
+        "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Caching\\NLayerApp.Caching.csproj",
+        "packagesPath": "C:\\Users\\balib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Caching\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\balib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj": {
+                "projectPath": "C:\\Users\\balib\\source\\repos\\NLayerApp\\NLayerApp.Service\\NLayerApp.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
