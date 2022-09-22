@@ -25,6 +25,7 @@ namespace NLayerApp.Caching.Caches
             _cache = cache;
             _repository = repository;
             _unitOfWork = unitOfWork;
+
             if (!_cache.TryGetValue(CacheProductKey, out _))
             {
                 _cache.Set(CacheProductKey, _repository.GetProductsWithCategory().Result);
@@ -55,8 +56,7 @@ namespace NLayerApp.Caching.Caches
 
         public Task<bool> AnyAsync(Expression<Func<Product, bool>> expression)
         {
-            //return Task.FromResult(_cache.TryGetValue(CacheProductKey, Product));
-            return Task.FromResult(true);
+            return _repository.AnyAsync(expression);
         }
 
         public async Task<Product> AddAsync(Product entity)
@@ -105,7 +105,7 @@ namespace NLayerApp.Caching.Caches
 
         public async Task CacheAllProducts()
         {
-            await _cache.Set(CacheProductKey, _repository.GetAll().ToListAsync());
+            _cache.Set(CacheProductKey,await _repository.GetAll().ToListAsync());
         }
     }
 }

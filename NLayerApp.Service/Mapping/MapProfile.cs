@@ -4,7 +4,7 @@ using NLayerApp.Core.DTOs;
 
 namespace NLayerApp.Service.Mapping;
 
-public class MapProfile:Profile
+public class MapProfile : Profile
 {
     public MapProfile()
     {
@@ -12,8 +12,9 @@ public class MapProfile:Profile
         CreateMap<ProductFeature, ProductFeatureDto>().ReverseMap();
         CreateMap<Category, CategoryDto>().ReverseMap();
         CreateMap<ProductUpdateDto, Product>();
-        CreateMap<Product,ProductWithCategoryDto>();
-        CreateMap<Category,CategoryWithProductsDto>();
+        CreateMap<Product, ProductWithCategoryDto>();
+        CreateMap<Category, CategoryWithProductsDto>();
+        CreateMap<Category, CategoryWithProductDto>();
     }
-    
+
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayerApp.Core.Concretes;
+using NLayerApp.Core.DTOs;
 using NLayerApp.Core.Repositories.Abstracts;
 
 namespace NLayerApp.Repository.Repositories;
@@ -16,5 +17,11 @@ public class CategoryRepository : GenericRepository<Category>, ICategoryReposito
             .Include(x => x.Products)
             .Where(x => x.Id == categoryId)
             .SingleOrDefaultAsync())!;
+    }
+
+    public async Task<List<Category>> GetCategoriesWithProducts()
+    {
+        var result = await _context.Categories.Include(x => x.Products).ToListAsync();
+        return result;
     }
 }
