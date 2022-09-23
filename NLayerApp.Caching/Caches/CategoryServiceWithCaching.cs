@@ -27,7 +27,7 @@ public class CategoryServiceWithCaching : ICategoryService
         _unitOfWork = unitOfWork;
 
         if (!_cache.TryGetValue(CacheStringKey, out _))
-        { 
+        {
             _cache.Set(CacheStringKey, _repository.GetCategoriesWithProducts().Result);
         }
     }
@@ -99,7 +99,7 @@ public class CategoryServiceWithCaching : ICategoryService
 
     public Task<CustomResponseDto<CategoryWithProductsDto>> GetSingleCategoryByIdWithProductAsync(int categoryId)
     {
-        var categories = _cache.Get<Category>(CacheStringKey);
+        var categories = _cache.Get<List<Category>>(CacheStringKey).FirstOrDefault(x => x.Id == categoryId);
         var categoriesDto = _mapper.Map<CategoryWithProductsDto>(categories);
         return Task.FromResult(CustomResponseDto<CategoryWithProductsDto>.Success(200, categoriesDto));
     }
@@ -113,6 +113,6 @@ public class CategoryServiceWithCaching : ICategoryService
 
     public async Task CacheAllCategories()
     {
-         _cache.Set(CacheStringKey,await _repository.GetAll().ToListAsync());
+        _cache.Set(CacheStringKey, await _repository.GetAll().ToListAsync());
     }
 }
