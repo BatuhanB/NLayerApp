@@ -1,0 +1,32 @@
+﻿@using System.Globalization
+@model List<ProductWithCategoryDto>
+@{
+	ViewData["Title"] = "Product Index";
+}
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Stock</th>
+			<th>Category</th>
+			<th>CreatedDate</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>@item.Id</td>
+				<td>@item.Name</td>
+				<td>@item.Price</td>
+				<td>@item.Stock</td>
+				<td>@item.Category.Name</td>
+				<td>@DateTime.Parse(@item.CreatedDate.ToString(CultureInfo.CurrentCulture)).ToString("D")</td>
+			</tr>
+		}
+	</tbody>
+
+</table>

@@ -51,16 +51,6 @@ namespace NLayerApp.API.Controllers
             return CreateActionResult(CustomResponseDto<ProductDto>.Success(201, productsDto));
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> SaveMany(List<ProductDto> productDto)
-        //{
-        //    var product = await _service.AddRangeAsync(_mapper.Map<List<Product>>(productDto));
-        //    var productsDto = _mapper.Map<ProductDto>(product);
-        //    //var result = CustomResponseDto<ProductDto>.Success(201, productsDto, "Product has been successfully saved");
-        //    var result2 = NoContentDto.Success(201, "Products has been successfully added");
-        //    return CreateActionResult(result2);
-        //}
-
         [HttpPut]
         public async Task<IActionResult> Update(ProductUpdateDto productUpdateDto)
         {
