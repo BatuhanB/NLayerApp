@@ -1,10 +1,9 @@
 ﻿using NLayerApp.Core.Concretes;
-using NLayerApp.Core.DTOs;
 
 namespace NLayerApp.Core.Repositories.Abstracts;
 
-public interface ICategoryRepository:IGenericRepository<Category>
+public interface ICategoryRepository : IGenericRepository<Category>
 {
-    Task<Category> GetSingleCategoryByIdWithProductAsync(int categoryId);
-    Task<List<Category>> GetCategoriesWithProducts();
+	Task<Category> GetSingleCategoryByIdWithProductAsync(int categoryId);
+	Task<List<Category>> GetCategoriesWithProducts();
 }

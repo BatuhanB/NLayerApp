@@ -1,23 +1,23 @@
-﻿using System.Reflection;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using NLayerApp.Core.Concretes;
+using System.Reflection;
 
 namespace NLayerApp.Repository;
 
-public class AppDbContext:DbContext
+public class AppDbContext : DbContext
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options):base(options)
-    {
-        
-    }
+	public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+	{
 
-    public DbSet<Category> Categories { get; set; }
-    public DbSet<Product> Products{ get; set; }
-    public DbSet<ProductFeature> ProductFeatures { get; set; }
+	}
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-        base.OnModelCreating(modelBuilder);
-    }
+	public DbSet<Category> Categories { get; set; }
+	public DbSet<Product> Products { get; set; }
+	public DbSet<ProductFeature> ProductFeatures { get; set; }
+
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
+	{
+		modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+		base.OnModelCreating(modelBuilder);
+	}
 }

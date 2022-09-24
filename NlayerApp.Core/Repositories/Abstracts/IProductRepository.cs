@@ -2,7 +2,7 @@
 
 namespace NLayerApp.Core.Repositories.Abstracts;
 
-public interface IProductRepository:IGenericRepository<Product>
+public interface IProductRepository : IGenericRepository<Product>
 {
-    Task<List<Product>> GetProductsWithCategory();
+	Task<List<Product>> GetProductsWithCategory();
 }

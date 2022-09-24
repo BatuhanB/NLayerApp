@@ -1,8 +1,6 @@
-﻿using System.Text.Json.Serialization;
-
-namespace NLayerApp.Core.DTOs;
+﻿namespace NLayerApp.Core.DTOs;
 
 public class NoContentDto
 {
-    
+
 }
