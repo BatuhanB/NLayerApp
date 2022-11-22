@@ -12,7 +12,7 @@ public class CustomResponseDto<T>
 	public int StatusCode { get; set; }
 
 	//Static Factory Design Pattern
-	//Instead of using separate classes for method we use static methods in class just like that
+	//Instead of using separate classes for method we use static methods in class just like below
 
 	public static CustomResponseDto<T> Success(int statusCode, T data)
 	{

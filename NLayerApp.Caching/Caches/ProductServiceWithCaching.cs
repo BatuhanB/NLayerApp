@@ -35,7 +35,7 @@ namespace NLayerApp.Caching.Caches
 		public Task<Product> GetByIdAsync(int id)
 		{
 			var product = _cache.Get<List<Product>>(CacheProductKey).FirstOrDefault(x => x.Id == id);
-			if (product == null)
+			if (product is null)
 			{
 				throw new NotFoundException($"{typeof(Product).Name}({id}) not found");
 			}
